@@ -1,0 +1,32 @@
+::ng-deep .ant-card-body {
+    padding: 0px;
+}
+
+
+  .list-group-item:hover {
+    background-color: #f1f4fa; /* Background color on hover */
+  }
+
+  ::ng-deep.list-group-item {
+    position: relative;
+    display: block;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    cursor: pointer;
+    padding: 0;
+    color: var(--bs-list-group-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    border-bottom:solid 1px #f0f0f0 ;
+}
+::ng-deep.ant-card-head-title {
+  display: inline-block;
+  flex: 1;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 14px 0;
+  overflow: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

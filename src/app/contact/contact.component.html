@@ -1,0 +1,50 @@
+        <div class="row   container ">
+            <div class="col ">
+                <div class="card border-0 shadow-lg " >
+                      <div class="card-header">
+                        <div class=" text-center p-2">
+                            <h2 class="fw-bold ">Contact-Us</h2>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                         <section class="content p-2">
+                           <div class="row p-2 mb-2">
+                            <div class="col">
+                                <label class="ant-form-item-label" >Name</label>
+                                <input type="text" class="ant-input" >
+                            </div>
+                           </div>
+                           <div class="row p-2 mb-2">
+                            <div class="col">
+                                <label class="ant-form-item-label" >Email</label>
+                                <input type="text" class="ant-input" >
+                            </div>
+                           </div>
+                           <div class="row p-2 mb-2">
+                            <div class="col">
+                                <label class="ant-form-item-label" >Phone</label>
+                                <input type="text" class="ant-input" >
+                            </div>
+                           </div>
+                           <div class="row p-2 mb-2">
+                            <div class="col">
+                                <label class="ant-form-item-label" >Messeges</label>
+                                <textarea
+                                nz-input
+                                [nzAutosize]="{ minRows: 5, maxRows: 12 }"
+                              ></textarea>
+                            </div>
+                           </div>
+
+                           <div class="row">
+                            <div class="col-12 text-end">
+                                <button nz-button nzType="primary" nzLoading>
+                                    Submit
+                                  </button>
+                            </div>
+                           </div>
+                         </section>
+                      </div>
+                </div>
+            </div>
+        </div>

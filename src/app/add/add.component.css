@@ -1,0 +1,68 @@
+::ng-deep .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading h2  {
+ color: #545454;
+}
+
+
+
+::ng-deep.card-header {
+background-color: none;
+background: none;
+}
+
+.ant-input{
+    box-sizing: border-box;
+    margin: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-width: 0;
+    padding: 6px 10px;
+    color: #202227;
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.ant-input:hover{
+    border-right-width: 1px !important;
+    border-color: #0763fb;
+}
+
+
+.ant-input:focus, .ant-input-focused {
+    border-color: #3087ff;
+    border-right-width: 1px !important;
+    outline: 0;
+    box-shadow: 0 0 3px #0763fb33;
+    border-color: #0763fb;
+    box-shadow: 0 0 3px #0763fb;
+}
+
+label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 29px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.ant-btn.ant-btn-primary, a.ant-btn.ant-btn-primary {
+    background-color: #004fd6;
+    border-color: #004fd6;
+    color: #fff;
+}

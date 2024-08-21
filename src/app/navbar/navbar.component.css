@@ -1,0 +1,23 @@
+/* Style for list items */
+li {
+    margin-right: 50px;
+    padding: 4px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 12px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+li:hover {
+    background-color: #333; 
+    border-radius: 5px;
+    cursor: pointer; 
+}
+

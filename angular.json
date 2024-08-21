@@ -25,11 +25,6 @@
                 "glob": "**/*",
                 "input": "public",
                 "output": "/public"
-              },
-              {
-                "glob": "**/*",
-                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
-                "output": "/assets/"
               }
             ],
             "styles": [
@@ -45,8 +40,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "2mb"
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -92,6 +87,7 @@
                 "glob": "**/*",
                 "input": "public"
               }
+             
             ],
             "styles": [
               "src/styles.css"
