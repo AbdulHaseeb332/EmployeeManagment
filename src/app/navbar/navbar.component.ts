@@ -10,4 +10,13 @@ import { RouterModule } from '@angular/router';
 })
 export class NavbarComponent {
 
-}
+  visible = false;
+
+  openDrawer(): void {
+    this.visible = true;
+  }
+
+  closeDrawer(): void {
+    this.visible = false;
+  }
+  }

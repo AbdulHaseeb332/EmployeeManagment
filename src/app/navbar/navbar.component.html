@@ -1,28 +1,49 @@
 <nav class="navbar navbar-expand-lg" style="background-color: #545454;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img style="width: 70px; height: auto;" src="https://i.ibb.co/GVstjK2/ngular.png"  alt="">
-
-
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto   ">
-          <li  class="nav-item">
-            <a   routerLink="/Employee/Dashboard" class="nav-link">Setup</a>
-          </li>
-          <li class="nav-item">
-            <a    routerLink="/Employee/ContactUs" class="nav-link" >Contact-Us</a>
-          </li>
-          <li class="nav-item">
-            <a    routerLink="/Employee/Add-Employee"  class="nav-link">Add-Employee</a>
-          </li>
-          <li class="nav-item">
-            <a    routerLink="/Employee/Record"  class="nav-link">Record</a>
-          </li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img style="width: 70px; height: auto;" src="https://i.ibb.co/GVstjK2/ngular.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" (click)="openDrawer()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item">
+          <a routerLink="/Employee/Dashboard" class="nav-link">Setup</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/Employee/ContactUs" class="nav-link">Contact-Us</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/Employee/Add-Employee" class="nav-link">Add-Employee</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/Employee/Record" class="nav-link">Record</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<nz-drawer
+  [nzVisible]="visible"
+  nzPlacement="left"
+  nzTitle="Menu"
+  (nzOnClose)="closeDrawer()"
+  [nzWidth]="300">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a routerLink="/Employee/Dashboard" class="nav-link" (click)="closeDrawer()">Setup</a>
+    </li>
+    <li class="list-group-item">
+      <a routerLink="/Employee/ContactUs" class="nav-link" (click)="closeDrawer()">Contact-Us</a>
+    </li>
+    <li class="list-group-item">
+      <a routerLink="/Employee/Add-Employee" class="nav-link" (click)="closeDrawer()">Add-Employee</a>
+    </li>
+    <li class="list-group-item">
+      <a routerLink="/Employee/Record" class="nav-link" (click)="closeDrawer()">Record</a>
+    </li>
+  </ul>
+</nz-drawer>
