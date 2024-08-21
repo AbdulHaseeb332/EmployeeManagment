@@ -1,0 +1,218 @@
+
+
+
+
+
+.card{
+  border:0;
+}
+
+.form-control {
+  box-sizing: border-box;
+  margin: 0;
+  font-variant: tabular-nums;
+  list-style: none;
+  font-feature-settings: "tnum";
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 0;
+  padding: 4px 8px;
+  color: #202227;
+  font-size: 14px;
+  line-height: 1.5715;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  transition: all .3s;
+}
+.form-label{
+ font-weight :500;
+ font-size:15px;
+ color:#000;
+ padding:0;
+}
+
+  .Form-Btn{
+  width:100px;
+  height:36px;
+  margin:8px 8px 8px 2px; 
+  padding:8px;
+  font-size:13px;
+  border:solid 2px #000000;
+  font-weight: 600;
+   background-color:#000;
+   color:#ffffff;
+   float:right;
+    border-radius:8px
+   
+  }
+  table{
+    width:100%;
+    table-layout:fixed
+    
+  }
+  .table thead th {
+    background-color: #f1f4fa;
+    color: #000000;
+    padding:20px;
+  }
+  .table tbody tr:nth-child(even) {
+    background-color: #f1f4fa;
+  }
+  
+  td{
+    padding:15px;
+
+  }
+ 
+  i{
+    cursor:pointer
+  }
+
+  input.ng-invalid.ng-touched, input.ng-invalid.ng-dirty {
+    background-color: #fff;
+    border-color: #d33a5a;
+
+  }
+  .patch-value:hover{
+    text-decoration:underline;
+    color:blue;
+    cursor:pointer
+  }
+  .patch-value{
+    text-decoration:none;
+    color:#000;
+    cursor:pointer
+  }
+  .spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    cursor: not-allowed;
+  }
+
+  img{
+    width:60px;
+    height:auto;
+    
+
+  }                                                                                                                              
+
+  .std{
+     font-size:19px;
+     font-weight: 700;
+     color:#000000;
+     line-height:2px;
+     padding:2px;
+     margin:4px
+
+  }
+  h1{
+    margin-left:auto;
+    margin-right:auto;
+    font-weight:700;
+    color:blue;
+    
+  }
+
+  .student-not {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    pointer-events: none; 
+  }
+
+ .phone-call{
+   width:20px;
+   height:auto;
+  }
+
+  .email{
+    width:20px;
+    
+    height:auto
+
+  }
+
+/* ------------------------------ */
+  .card2-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .card2 {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    color: #000000;
+
+    border-bottom: 1px solid #eee;
+  }
+  
+  .card2-body {
+    padding: 1rem;
+  }
+  
+  .card2-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .card2-image img {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .card2-text {
+    font-size: 0.9rem;
+  }
+  
+  .card2-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .card2-footer i {
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }
+  .table-hover>tbody>tr:hover>* {
+    --bs-table-color-state: var(--bs-table-hover-color);
+    --bs-table-bg-state: var(--bs-table-hover-bg);
+    transition:all 0.60s;
+} 
+ 
+tbody{
+  max-height: 500px;
+  overflow: auto;
+}
