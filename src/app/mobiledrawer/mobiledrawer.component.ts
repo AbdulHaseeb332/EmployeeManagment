@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
 
@@ -8,6 +9,7 @@ import { NzDrawerModule } from 'ng-zorro-antd/drawer';
   imports: [
     NzDrawerModule,
     NzButtonModule,
+    RouterModule
   ],
   templateUrl: './mobiledrawer.component.html',
   styleUrl: './mobiledrawer.component.css'
