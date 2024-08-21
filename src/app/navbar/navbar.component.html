@@ -25,25 +25,5 @@
   </div>
 </nav>
 
-<!-- Mobile Drawer -->
-<nz-drawer
-  [nzVisible]="visible"
-  nzPlacement="left"
-  nzTitle="Menu"
-  (nzOnClose)="closeDrawer()"
-  [nzWidth]="300">
-  <ul class="list-group">
-    <li class="list-group-item">
-      <a routerLink="/Employee/Dashboard" class="nav-link" (click)="closeDrawer()">Setup</a>
-    </li>
-    <li class="list-group-item">
-      <a routerLink="/Employee/ContactUs" class="nav-link" (click)="closeDrawer()">Contact-Us</a>
-    </li>
-    <li class="list-group-item">
-      <a routerLink="/Employee/Add-Employee" class="nav-link" (click)="closeDrawer()">Add-Employee</a>
-    </li>
-    <li class="list-group-item">
-      <a routerLink="/Employee/Record" class="nav-link" (click)="closeDrawer()">Record</a>
-    </li>
-  </ul>
-</nz-drawer>
+
+<app-mobiledrawer [visible]="visible" (closeDrawerEvent)="closeDrawer()"></app-mobiledrawer>
