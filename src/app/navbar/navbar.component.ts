@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzDrawerModule } from 'ng-zorro-antd/drawer';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule,
+    NzDrawerModule,
+    NzButtonModule,
+  ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
