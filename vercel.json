@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "https://your-azure-app-service-url/api/$1"
+      }
+    ]
+  }
+  
