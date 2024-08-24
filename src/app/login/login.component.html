@@ -1,0 +1,74 @@
+<div ant-row-center style="row-gap: 0px;" class="bgcolor">
+    <form [formGroup]="UserForm" class="ant-form m-auto">
+      <div ant-row-center style="row-gap: 0px;padding-top: 200px;"></div>
+  
+      <nz-card id="usernameCard" class="ant-form ant-form-vertical" [nzBordered]="true">
+        <div class="ant-card-body">
+          <nz-alert
+          *ngIf="showError"
+          nzType="error"
+          nzMessage="Error"
+          [nzDescription]="errorMessage" 
+          nzShowIcon
+        ></nz-alert>
+          <div ant-row style="row-gap: 0px;" class="mb-4">
+            <div nz-col class="ant-col" [nzXs]="24" [nzSm]="16" [nzMd]="10" [nzXl]="6">
+              <div ant-row class="ant-form ant-form-vertical">
+                <div ant-col class="ant-col">
+                  <label>Username</label>
+                </div>
+              </div>
+              <div ant-row style="row-gap: 0px;">
+                <div nz-col class="ant-col">
+                  <nz-form-control nzErrorTip="Username is required">
+                    <input
+                      type="text"
+                      nz-input
+                      formControlName="username"
+                      class="ant-input"
+                      [ngClass]="{ 'is-invalid': UserForm.get('username')?.invalid && (UserForm.get('username')?.touched || UserForm.get('username')?.dirty) }"
+                    />
+                  </nz-form-control>
+                </div>
+              </div>
+              <div ant-row class="ant-form ant-form-vertical mt-3">
+                <div ant-col class="ant-col">
+                  <label>Password</label>
+                </div>
+              </div>
+              <div ant-row style="row-gap: 0px;" >
+                <div nz-col class="ant-col">
+                  <nz-form-control nzErrorTip="Password is required">
+                    <input
+                      type="text"
+                      nz-input
+                      formControlName="password"
+                      class="ant-input"
+                      [ngClass]="{ 'is-invalid': UserForm.get('password')?.invalid && (UserForm.get('password')?.touched || UserForm.get('password')?.dirty) }"
+                    />
+                  </nz-form-control>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ant-row>
+            <div nz-col class="ant-col" [nzXs]="24" [nzSm]="16" [nzMd]="10" [nzXl]="24">
+              <button (click)="submitForm()" nz-button nzType="primary" class="usersubmit ant-btn w-100" [nzLoading]="isLoading" [disabled]="UserForm.invalid">
+                Submit
+              </button>
+            </div>
+          </div>
+  
+          <div ant-row class="ant-row-space-between margin-top-lg">
+            <div nz-col class="ant-col">
+              Don't Have Account:
+              <a (click)="GotoSingup()" nz-button nzType="link" class="isolated ant-btn ant-btn-link">
+                <span>Sign Up</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nz-card>
+    </form>
+  </div>
+  

@@ -10,10 +10,11 @@ import { Iuser } from './inter';
 import { NzTagModule } from 'ng-zorro-antd/tag';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,DashboardComponent, HttpClientModule,FormsModule, ReactiveFormsModule, RouterModule, NzSpinModule, NzPageHeaderModule, NzTagModule, NavbarComponent],
+  imports: [CommonModule,DashboardComponent,LoginComponent, HttpClientModule,FormsModule, ReactiveFormsModule, RouterModule, NzSpinModule, NzPageHeaderModule, NzTagModule, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

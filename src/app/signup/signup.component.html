@@ -1,0 +1,132 @@
+<div ant-row-center style="row-gap: 0px;" class="bgcolor">
+  <div ant-row-center style="row-gap: 0px; padding-top: 180px;"></div>
+
+  <form [formGroup]="SingUp" class="ant-form m-auto">
+    <nz-card id="usernameCard" class="ant-form ant-form-vertical" [nzBordered]="true">
+      <div class="ant-card-body">
+
+        <!-- First Name -->
+        <div ant-row class="mb-3">
+          <div nz-col [nzXs]="24" [nzSm]="16" [nzMd]="10" [nzXl]="6">
+            <nz-form-control nzErrorTip="First Name is required">
+              <label >First Name</label>
+              <input
+                type="text"
+                nz-input
+                formControlName="firstName"
+                class="ant-input"
+                [ngClass]="{
+                  'is-invalid': SingUp.get('firstName')?.invalid && 
+                  (SingUp.get('firstName')?.touched || SingUp.get('firstName')?.dirty)
+                }"
+              />
+            </nz-form-control>
+          </div>
+        </div>
+
+        <!-- Last Name -->
+        <div ant-row class="mb-3">
+          <div nz-col [nzXs]="24" [nzSm]="16" [nzMd]="10" [nzXl]="6">
+            <nz-form-control nzErrorTip="Last Name is required">
+              <label>Last Name</label>
+              <input
+                type="text"
+                nz-input
+                formControlName="lastName"
+                class="ant-input"
+                [ngClass]="{
+                  'is-invalid': SingUp.get('lastName')?.invalid && 
+                  (SingUp.get('lastName')?.touched || SingUp.get('lastName')?.dirty)
+                }"
+              />
+            </nz-form-control>
+          </div>
+        </div>
+
+        <!-- Username -->
+        <div ant-row class="mb-3">
+          <div nz-col [nzXs]="24" [nzSm]="16" [nzMd]="10" [nzXl]="6">
+            <nz-form-control nzErrorTip="Username is required">
+              <label>Username</label>
+              <input
+                type="text"
+                nz-input
+                formControlName="username"
+                class="ant-input"
+                [ngClass]="{
+                  'is-invalid': SingUp.get('username')?.invalid && 
+                  (SingUp.get('username')?.touched || SingUp.get('username')?.dirty)
+                }"
+              />
+            </nz-form-control>
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div ant-row class="mb-4">
+          <div nz-col [nzXs]="24" [nzSm]="16" [nzMd]="10" [nzXl]="6">
+            <nz-form-control nzErrorTip="Password is required">
+              <label>Password</label>
+              <input
+                type="password"
+                nz-input
+                formControlName="password"
+                class="ant-input"
+                [ngClass]="{
+                  'is-invalid': SingUp.get('password')?.invalid && 
+                  (SingUp.get('password')?.touched || SingUp.get('password')?.dirty)
+                }"
+              />
+            </nz-form-control>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div ant-row class="mb-4">
+          <div nz-col [nzXs]="24" [nzSm]="16" [nzMd]="10" [nzXl]="6">
+            <nz-form-control nzErrorTip="Please enter a valid email address">
+              <label>Email</label>
+              <input
+                type="email"
+                nz-input
+                formControlName="email"
+                class="ant-input"
+                [ngClass]="{
+                  'is-invalid': SingUp.get('email')?.invalid && 
+                  (SingUp.get('email')?.touched || SingUp.get('email')?.dirty)
+                }"
+              />
+            </nz-form-control>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div ant-row>
+          <div nz-col [nzXs]="24" [nzSm]="16" [nzMd]="10" [nzXl]="24">
+            <button
+              (click)="submitForm()"
+              [nzLoading]="isLoading"
+              nz-button
+              nzType="primary"
+              class="usersubmit ant-btn w-100"
+              [disabled]="SingUp.invalid"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+
+        <!-- Already Have Account -->
+        <div ant-row class="ant-row-space-between margin-top-lg">
+          <div nz-col>
+            Already Have Account:
+            <a (click)="GotoLogin()" nz-button nzType="link" class="isolated ant-btn ant-btn-link">
+              <span>Login</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </nz-card>
+  </form>
+</div>
