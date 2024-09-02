@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private baseUrl:string ="https://localhost:7107/api/User/"
+  private baseUrl:string ="https://b583-116-90-98-6.ngrok-free.app/api/User/"
   constructor(private http: HttpClient) { }
 
 SignUp(userObj :any): Observable<any>{
